@@ -9,7 +9,7 @@ var SongQueueView = Backbone.View.extend({
   },
 
   render: function() {
-     //this.$el.children().detach();
+    this.$el.children().detach();
 
     this.$el.html('<th>Song Queue View</th>').append(
       this.collection.map(function(song) {
